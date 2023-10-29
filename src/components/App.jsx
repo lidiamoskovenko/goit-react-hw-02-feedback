@@ -26,7 +26,7 @@ class App extends Component {
       <div>
         <Section title="Please leave feedback">
           <>
-            <FeedbackOptions options={this.state} onLeaveFeedback={this.makeFeedback} />
+            <FeedbackOptions options={{ good, neutral, bad }} onLeaveFeedback={this.makeFeedback} />
             {total > 0 ? (
               <Statistics good={good} neutral={neutral} bad={bad} total={total} percentage={percentage} />
             ) : (
